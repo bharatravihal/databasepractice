@@ -18,9 +18,5 @@ app.post("/calculate",function(req,res){
   var  num2=req.body.number2;
    num3 =num1*num2;
 
-   console.log(num3);
-   res.redirect("/calculate");
-})
-app.get("/calculate",function(req,res){
-    res.send(num3);
+   res.send(num3);
 })
